@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="calculator" id="calculator">
+  
+    <div class="calc-header">
+      <button id="historyBtn" class="history-btn" title="History" aria-label="History">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+      </button>
+
+      <div class="theme-toggle">
+        <button id="themeBtn" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+
+    <div id="historyPanel" class="history-panel" aria-hidden="true">
+      <div class="history-panel-header">
+        <span>History</span>
+        <button id="clearHistory" class="clear-history" title="Clear history">✕</button>
+      </div>
+      <div id="historyList" class="history-list">
+        <div class="muted">No calculations yet</div>
+      </div>
+    </div>
+
+    <div class="display">
+      <div id="result" class="result">0</div>
+
+      <div class="input-plate">
+        <button id="replay" class="replay" title="Undo last input" aria-label="Undo">↺</button>
+        <div id="history" class="history display-plate">0</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn gray" data-value="AC">AC</button>
+      <button class="btn gray" data-value="+/-">+/-</button>
+      <button class="btn gray" data-value="%">%</button>
+      <button class="btn orange" data-value="/">÷</button>
+
+      <button class="btn dark" data-value="7">7</button>
+      <button class="btn dark" data-value="8">8</button>
+      <button class="btn dark" data-value="9">9</button>
+      <button class="btn orange" data-value="*">×</button>
+
+      <button class="btn dark" data-value="4">4</button>
+      <button class="btn dark" data-value="5">5</button>
+      <button class="btn dark" data-value="6">6</button>
+      <button class="btn orange" data-value="-">−</button>
+
+      <button class="btn dark" data-value="1">1</button>
+      <button class="btn dark" data-value="2">2</button>
+      <button class="btn dark" data-value="3">3</button>
+      <button class="btn orange" data-value="+">+</button>
+
+      <button class="btn dark zero" data-value="0">0</button>
+      <button class="btn dark" data-value=".">.</button>
+      <button class="btn orange" data-value="=">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
